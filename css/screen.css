@@ -719,6 +719,48 @@ input::placeholder {
 
 /* checked state */
 
+.c-custom-input-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--color-neutral-xxx-light);
+    margin-right: 8px;
+    box-shadow: var(--inset-shadow);
+}
+
+.c-custom-input-option--checkbox {
+    border-radius: var(--radius);
+}
+
+.c-custom-input-option--radio {
+    border-radius: 100%;
+}
+
+.c-custom-input-option-label {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.c-custom-input-option__symbol {
+    display: block;
+    /* opacity: 0; */
+}
+
+.c-custom-input-option--checkbox .c-custom-input-option__symbol {
+    width: 10px;
+    height: 10px;
+    fill: var(--color-alpha);
+}
+  
+.c-custom-input-option--radio .c-custom-input-option__symbol {
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-alpha);
+    border-radius: 100%;
+}
+
 .c-custom-input-option-hidden:checked + .c-custom-input-option-label {
     /*
         Do magic stuff here, for example:
