@@ -53,6 +53,7 @@
 
     /* transitions */
     --transition-alpha: .1s ease-out;
+    --transition: opacity 150ms ease-in-out;
 }
 
 /*------------------------------------*\
@@ -745,7 +746,8 @@ input::placeholder {
 
 .c-custom-input-option__symbol {
     display: block;
-    /* opacity: 0; */
+    opacity: 0;
+    transition: var(--transition);
 }
 
 .c-custom-input-option--checkbox .c-custom-input-option__symbol {
@@ -769,10 +771,7 @@ input::placeholder {
 }
 
 .c-custom-input-option-hidden:checked + .c-custom-input-option-label .c-custom-input-option__symbol {
-    /*
-        Do magic stuff here, for example:
-        fill: blue;
-    */
+    opacity: 1;
 }
 
 /*------------------------------------*\
