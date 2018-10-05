@@ -784,6 +784,45 @@ input::placeholder {
     opacity: 1;
 }
 
+.c-toggle__input {
+    display: block;
+    background-color: var(--color-neutral-xxxx-light);
+    border: 1px solid var(--color-neutral-xxx-light);
+    border-radius: 24px;
+    width: 48px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.c-toggle__input::after {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.16);
+    transition: all var(--transition-alpha);
+}
+
+.c-toggle__label {
+    display: flex;
+    align-items: center;
+}
+
+.c-toggle__checkbox-hidden:checked + .c-toggle__label .c-toggle__input::after {
+    transform: translateX(24px);
+}
+
+.c-toggle__checkbox-hidden:checked + .c-toggle__label .c-toggle__input {
+    background-color: var(--color-alpha);
+    border-color: var(--color-alpha-dark);
+}
+
+.c-toggle__checkbox-hidden:focus + .c-toggle__label .c-toggle__input {
+    box-shadow: 0 0 0 3px var(--color-alpha-xx-light);
+}
+
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
