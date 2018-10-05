@@ -703,10 +703,11 @@ input::placeholder {
 */
 
 .c-option-list {
-
+    margin-bottom: 24px;
 }
 
 .c-option-list__item {
+    margin-bottom: 12px;
 
 }
 
@@ -741,7 +742,6 @@ input::placeholder {
 
 .c-custom-input-option-label {
     display: flex;
-    margin-bottom: 8px;
 }
 
 .c-custom-input-option-label:hover .c-custom-input-option {
