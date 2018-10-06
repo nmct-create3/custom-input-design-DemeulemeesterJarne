@@ -870,6 +870,26 @@ input::placeholder {
     margin-right: 0;
 }
 
+/*
+    Component: Custom select
+    ---
+    Custom select
+*/
+
+.c-custom-select {
+    display: block;
+}
+
+.c-custom-select__symbol {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 24px;
+    height: 24px;
+    fill: var(--color-neutral-x-light);
+    pointer-events: none;
+}
+
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
